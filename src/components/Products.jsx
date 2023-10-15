@@ -1,13 +1,23 @@
-import React from 'react'
+import React from "react";
+// import CardCarousel from "./CardCarousel";
+import ProductCardCarousel from "./ProductCardCarousel";
 
 const Products = () => {
   return (
-    <>
-    <div className='section'> Hello world
-<hr></hr>
-        </div>
-        </>
-  )
-}
+    <div className="h-120" style={{ overflow: "hidden", height: "120vh" }}>
 
-export default Products
+      <div>
+        <p className="display-6 text-center text-light bg-dark">New Arrivals</p>
+        <ProductCardCarousel />
+      </div>
+   
+      <div>
+        <p className="display-6 text-center text-light bg-dark">Special Offers</p>
+        <ProductCardCarousel />
+       
+      </div>
+    </div>
+  );
+};
+
+export default Products;

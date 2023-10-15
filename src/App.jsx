@@ -1,21 +1,22 @@
 import "./App.css";
-import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
+import Information from "./components/Information";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
-import VendorRegistration from "./components/VendorRegistration";
 
 
 function App() {
   return (
     <>
+    <div className="bg-dark text-light">
     <Navbar />
     <Homepage />
     <Products />
-    <Blog />
-    <Footer />
+    <Information />
+    <Footer /> 
   
+</div>
     </>
   );
 }

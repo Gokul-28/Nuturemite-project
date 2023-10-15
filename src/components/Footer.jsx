@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <div className="footerSection">
-        <footer className="footer mt-auto py-3 bg-dark">
+        <footer className="footer mt-auto py-3 bg-dark text-light">
           <div className="row text-center">
             <div className="col">
               <b>
@@ -59,8 +59,8 @@ const Footer = () => {
               <BsYoutube className="me-4" />
               <BsLinkedin className="me-4" />
             </div>
-          </div> <hr/>
-          <div className="mt-auto bg-dark">
+          </div> 
+          <div className="mt-auto">
             <img
               className="img-fluid footer-image float-start"
               src={IMAGES.logoFooter}

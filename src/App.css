@@ -1,39 +1,47 @@
 /* Overall */
 
-.section{
-    height: 100vh;
-    scroll-snap-align: start;
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+hr{
+   margin-left: 400px;
+   margin-right: 400px;
 }
 /* Navbar Component */
-.logo{
-    width: 70px
+.logo {
+  width: 70px;
 }
-
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 /* HomePage Area*/
 
-
 /* Carousel Section */
-.carousel-home{
-    position: relative;
-    height: 50vh;
+.carousel-home {
+  position: relative;
+  height: 50vh;
 }
-
-
 
 /* Blog Component Area */
-.card-group{
-    margin-left: 150px;
-    margin-right: 150px;
+.card-group {
+  margin-left: 150px;
+  margin-right: 150px;
 }
-.blog{
-    overflow-y: hidden;
-    overflow-x: hidden;
+.blog {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
 
 /* Footer Area */
-.footer-image{
-    width: 120px;
-    height: 50px;
-    margin-left: 40px;
+.footer-image {
+  width: 80px;
+  height: 40px;
+  margin-left: 40px;
 }
+
+
+
