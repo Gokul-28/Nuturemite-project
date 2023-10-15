@@ -1,22 +1,31 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
-import Homepage from "./components/Homepage";
-import Information from "./components/Information";
+import MainPage from "./components/MainPage";
+import VendorRegistration from "./components/VendorRegistration";
+import VendorLogin from "./components/VendorLogin";
+import Store from "./components/Store";
+import Error from "./components/Error";
 import Navbar from "./components/Navbar";
-import Products from "./components/Products";
-
-
+import Footer from "./components/Footer";
+import BlogPage from "./components/BlogPage";
+import About from "./components/About";
+import Dashboard from "./components/Dashboard";
 function App() {
   return (
     <>
-    <div className="bg-dark text-light">
-    <Navbar />
-    <Homepage />
-    <Products />
-    <Information />
-    <Footer /> 
-  
-</div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="register" element={<VendorRegistration />} />
+          <Route path="login" element={<VendorLogin />} />
+          <Route path="store" element={<Store />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

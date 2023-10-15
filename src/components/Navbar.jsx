@@ -1,7 +1,9 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import IMAGES from "../images/image";
 import { BsPersonPlusFill } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
+
 
 const Navbar = () => {
   return (
@@ -12,41 +14,42 @@ const Navbar = () => {
             <img className="logo" src={IMAGES.logo} alt="Logo" />
           </a>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto me-3">
-              <li className="nav-item active">
-                <a className="nav-link me-5" href="#">
-                  Home
-                </a>
+            <ul className="navbar-nav ms-auto me-1">
+              <li className="nav-item active me-5">
+              <Link to="/" className="nav-item  homenav text-muted text-decoration-none">
+              <p className="text-light">Home</p>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">
-                  About
-                </a>
+              <Link to="about" className="nav-item me-1 text-muted text-decoration-none">
+              <p className="text-light">About</p>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">
-                  Store
-                </a>
+              <Link to="store" className="nav-item me-1 text-muted text-decoration-none">
+              <p className="text-light">Store</p>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">
-                  Blog
-                </a>
+              <Link to="blog" className="nav-item me-1 text-muted text-decoration-none">
+              <p className="text-light">Blog </p>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">
-                 <BsFillPersonFill /> Login 
-                </a>
+                <Link to="login" className="nav-item me-1 text-muted text-decoration-none">
+                  <p className="text-light"><BsFillPersonFill /> Login </p>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">
-                   <BsPersonPlusFill /> Register
-                </a>
+                <Link to="register" className="nav-item me-1 text-muted text-decoration-none">
+                   <p className="text-light"> <BsPersonPlusFill /> Register </p>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <Outlet />
     </>
   );
 };

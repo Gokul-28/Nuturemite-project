@@ -19,7 +19,14 @@ hr{
   z-index: 1000;
 }
 /* HomePage Area*/
-
+.Section{
+  margin-top: 86px;
+  height: 70vh;
+}
+.Sections{
+  margin-top: 86px;
+  
+}
 /* Carousel Section */
 .carousel-home {
   position: relative;

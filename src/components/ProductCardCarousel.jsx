@@ -28,7 +28,7 @@ const ProductCardCarousel = () => {
         <div key={product.prodIndex} className="card bg-dark text-light " style={{ width: '13rem' }}>
           <img className="card-img-top" src={product.prodImage} alt="product" />
           <div className="card-body">
-            <p className="card-subtitle text-light ">
+            <p className="card-subtitle text-light">
               <small>{product.category}</small>
             </p>
             <p className="card-title mb-1">{product.prodName}</p>

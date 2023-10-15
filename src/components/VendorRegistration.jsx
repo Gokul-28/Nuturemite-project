@@ -2,7 +2,8 @@ import React from 'react';
 
 const VendorRegistration = () => {
   return (
-    <div className="container mt-5">
+    <div className='Sections bg-dark text-light'>
+    <div className="container mt-5 ">
       <div className="row">
         <div className="col-md-6">
           <h2>Vendor Registration</h2>
@@ -83,6 +84,7 @@ const VendorRegistration = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };
