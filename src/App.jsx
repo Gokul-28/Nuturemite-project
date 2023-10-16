@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BlogPage from "./components/BlogPage";
 import About from "./components/About";
-import Dashboard from "./components/Dashboard";
+
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
+          <Route path="/login" element={<VendorLogin />} />
         </Routes>
         <Footer />
       </BrowserRouter>
